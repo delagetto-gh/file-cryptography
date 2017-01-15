@@ -66,16 +66,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\FileCryptography.Framework.Services.Contracts\FileCryptography.Framework.Services.Contracts.csproj">
-      <Project>{2506d803-98fa-4ac5-9fce-9af7307ce0f9}</Project>
-      <Name>FileCryptography.Framework.Services.Contracts</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\FileCryptography.Services.ServiceImplementation\FileCryptography.Services.ServiceImplementation.csproj">
-      <Project>{ec149a6c-0de8-44ef-ab5d-5cbe0ffde390}</Project>
-      <Name>FileCryptography.Services.ServiceImplementation</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

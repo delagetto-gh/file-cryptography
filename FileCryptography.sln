@@ -5,19 +5,11 @@ VisualStudioVersion = 12.0.40629.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{BDF428A3-B7B8-4402-8F28-5D11860177C1}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{F2623592-2EDC-4607-9E07-6B2ED308847E}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Data", "Data", "{B495307B-B852-4F78-8CEC-29C99DA5E640}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{56601C43-0622-4E17-B31B-1EA497B0F981}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Framework", "Framework", "{8471E383-ADD2-4C57-9324-51B8E9C18C33}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{D7B52CFE-1325-41D2-ADC7-FE2D4BAA0DB6}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileCryptography.Framework.Services.Contracts", "FileCryptography.Framework.Services.Contracts\FileCryptography.Framework.Services.Contracts.csproj", "{2506D803-98FA-4AC5-9FCE-9AF7307CE0F9}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileCryptography.Services.ServiceImplementation", "FileCryptography.Services.ServiceImplementation\FileCryptography.Services.ServiceImplementation.csproj", "{EC149A6C-0DE8-44EF-AB5D-5CBE0FFDE390}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{8471E383-ADD2-4C57-9324-51B8E9C18C33}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileCryptography.Services.ServiceHost.Wcf", "FileCryptography.Services.ServiceHost.Wcf\FileCryptography.Services.ServiceHost.Wcf.csproj", "{0A98464D-8CBC-42F3-A295-3FED5857FDAA}"
 EndProject
@@ -25,12 +17,19 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{683893F4
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileCryptography.Domain.Model", "FileCryptography.Domain.Model\FileCryptography.Domain.Model.csproj", "{AB3CD018-F91A-4FCD-AE45-CD1B32EF665A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileCryptography.Presentation.Client.Wpf", "FileCryptography.Presentation.Client.Wpf\FileCryptography.Presentation.Client.Wpf.csproj", "{F0D456E8-D341-427E-B728-5C1D4DD860F3}"
-	ProjectSection(ProjectDependencies) = postProject
-		{0A98464D-8CBC-42F3-A295-3FED5857FDAA} = {0A98464D-8CBC-42F3-A295-3FED5857FDAA}
-	EndProjectSection
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileCryptography.Data.Resources", "FileCryptography.Data.Resources\FileCryptography.Data.Resources.csproj", "{C00A1EE4-772F-48BD-B697-931F33BACB88}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileCryptography.Domain.Services", "FileCryptography.Domain.Services\FileCryptography.Domain.Services.csproj", "{EF87A73E-A9CD-420C-805F-10101EB5DA0B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileCryptography.Infrastructure.Logging", "FileCryptography.Infrastructure.Logging\FileCryptography.Infrastructure.Logging.csproj", "{853E76C4-AEC1-4483-A6C7-A4541EFB25FC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileCryptography.Infrastructure.DataAccess", "FileCryptography.Infrastructure.DataAccess\FileCryptography.Infrastructure.DataAccess.csproj", "{6136D6FA-E00D-4D0B-9E77-6212E5690B98}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileCryptography.Data.InMemoryDb", "FileCryptography.Data.InMemoryDb\FileCryptography.Data.InMemoryDb.csproj", "{6E977590-39F4-43FA-9BF2-102352F20A34}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileCryptography.Infrastructure.Services", "FileCryptography.Infrastructure.Services\FileCryptography.Infrastructure.Services.csproj", "{2506D803-98FA-4AC5-9FCE-9AF7307CE0F9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileCryptography.App.Client", "FileCryptography.App.Client\FileCryptography.App.Client.csproj", "{F0D456E8-D341-427E-B728-5C1D4DD860F3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -38,14 +37,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{2506D803-98FA-4AC5-9FCE-9AF7307CE0F9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{2506D803-98FA-4AC5-9FCE-9AF7307CE0F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{2506D803-98FA-4AC5-9FCE-9AF7307CE0F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{2506D803-98FA-4AC5-9FCE-9AF7307CE0F9}.Release|Any CPU.Build.0 = Release|Any CPU
-		{EC149A6C-0DE8-44EF-AB5D-5CBE0FFDE390}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{EC149A6C-0DE8-44EF-AB5D-5CBE0FFDE390}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{EC149A6C-0DE8-44EF-AB5D-5CBE0FFDE390}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{EC149A6C-0DE8-44EF-AB5D-5CBE0FFDE390}.Release|Any CPU.Build.0 = Release|Any CPU
 		{0A98464D-8CBC-42F3-A295-3FED5857FDAA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{0A98464D-8CBC-42F3-A295-3FED5857FDAA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0A98464D-8CBC-42F3-A295-3FED5857FDAA}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -54,25 +45,46 @@ Global
 		{AB3CD018-F91A-4FCD-AE45-CD1B32EF665A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AB3CD018-F91A-4FCD-AE45-CD1B32EF665A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AB3CD018-F91A-4FCD-AE45-CD1B32EF665A}.Release|Any CPU.Build.0 = Release|Any CPU
-		{F0D456E8-D341-427E-B728-5C1D4DD860F3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F0D456E8-D341-427E-B728-5C1D4DD860F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F0D456E8-D341-427E-B728-5C1D4DD860F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F0D456E8-D341-427E-B728-5C1D4DD860F3}.Release|Any CPU.Build.0 = Release|Any CPU
 		{C00A1EE4-772F-48BD-B697-931F33BACB88}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{C00A1EE4-772F-48BD-B697-931F33BACB88}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C00A1EE4-772F-48BD-B697-931F33BACB88}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C00A1EE4-772F-48BD-B697-931F33BACB88}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EF87A73E-A9CD-420C-805F-10101EB5DA0B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EF87A73E-A9CD-420C-805F-10101EB5DA0B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EF87A73E-A9CD-420C-805F-10101EB5DA0B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EF87A73E-A9CD-420C-805F-10101EB5DA0B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{853E76C4-AEC1-4483-A6C7-A4541EFB25FC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{853E76C4-AEC1-4483-A6C7-A4541EFB25FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{853E76C4-AEC1-4483-A6C7-A4541EFB25FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{853E76C4-AEC1-4483-A6C7-A4541EFB25FC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6136D6FA-E00D-4D0B-9E77-6212E5690B98}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6136D6FA-E00D-4D0B-9E77-6212E5690B98}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6136D6FA-E00D-4D0B-9E77-6212E5690B98}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6136D6FA-E00D-4D0B-9E77-6212E5690B98}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6E977590-39F4-43FA-9BF2-102352F20A34}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6E977590-39F4-43FA-9BF2-102352F20A34}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6E977590-39F4-43FA-9BF2-102352F20A34}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6E977590-39F4-43FA-9BF2-102352F20A34}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2506D803-98FA-4AC5-9FCE-9AF7307CE0F9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2506D803-98FA-4AC5-9FCE-9AF7307CE0F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2506D803-98FA-4AC5-9FCE-9AF7307CE0F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2506D803-98FA-4AC5-9FCE-9AF7307CE0F9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F0D456E8-D341-427E-B728-5C1D4DD860F3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F0D456E8-D341-427E-B728-5C1D4DD860F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F0D456E8-D341-427E-B728-5C1D4DD860F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F0D456E8-D341-427E-B728-5C1D4DD860F3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{D7B52CFE-1325-41D2-ADC7-FE2D4BAA0DB6} = {8471E383-ADD2-4C57-9324-51B8E9C18C33}
-		{2506D803-98FA-4AC5-9FCE-9AF7307CE0F9} = {D7B52CFE-1325-41D2-ADC7-FE2D4BAA0DB6}
-		{EC149A6C-0DE8-44EF-AB5D-5CBE0FFDE390} = {BDF428A3-B7B8-4402-8F28-5D11860177C1}
 		{0A98464D-8CBC-42F3-A295-3FED5857FDAA} = {BDF428A3-B7B8-4402-8F28-5D11860177C1}
 		{AB3CD018-F91A-4FCD-AE45-CD1B32EF665A} = {56601C43-0622-4E17-B31B-1EA497B0F981}
-		{F0D456E8-D341-427E-B728-5C1D4DD860F3} = {F2623592-2EDC-4607-9E07-6B2ED308847E}
 		{C00A1EE4-772F-48BD-B697-931F33BACB88} = {B495307B-B852-4F78-8CEC-29C99DA5E640}
+		{EF87A73E-A9CD-420C-805F-10101EB5DA0B} = {56601C43-0622-4E17-B31B-1EA497B0F981}
+		{853E76C4-AEC1-4483-A6C7-A4541EFB25FC} = {8471E383-ADD2-4C57-9324-51B8E9C18C33}
+		{6136D6FA-E00D-4D0B-9E77-6212E5690B98} = {8471E383-ADD2-4C57-9324-51B8E9C18C33}
+		{6E977590-39F4-43FA-9BF2-102352F20A34} = {B495307B-B852-4F78-8CEC-29C99DA5E640}
+		{2506D803-98FA-4AC5-9FCE-9AF7307CE0F9} = {8471E383-ADD2-4C57-9324-51B8E9C18C33}
 	EndGlobalSection
 EndGlobal

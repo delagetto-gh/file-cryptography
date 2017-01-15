@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{AB3CD018-F91A-4FCD-AE45-CD1B32EF665A}</ProjectGuid>
+    <ProjectGuid>{2506D803-98FA-4AC5-9FCE-9AF7307CE0F9}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>FileCryptography.Domain.Model</RootNamespace>
-    <AssemblyName>FileCryptography.Domain.Model</AssemblyName>
+    <RootNamespace>FileCryptography.Infrastructure.Services</RootNamespace>
+    <AssemblyName>FileCryptography.Infrastructure.Services</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -33,6 +33,7 @@
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -40,10 +41,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CryptographyAction.cs" />
-    <Compile Include="CryptographyActivity.cs" />
-    <Compile Include="File.cs" />
+    <Compile Include="PgpFileCryptographyService.cs" />
+    <Compile Include="FileCryptionArgs.cs" />
+    <Compile Include="Events\FileCryptionEvent.cs" />
+    <Compile Include="IFileCryptographyServiceCallbacks.cs" />
+    <Compile Include="IFileCryptographyService.cs" />
+    <Compile Include="KeyFile.cs" />
+    <Compile Include="Responses\IServiceResponse.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\FileCryptography.Domain.Model\FileCryptography.Domain.Model.csproj">
+      <Project>{ab3cd018-f91a-4fcd-ae45-cd1b32ef665a}</Project>
+      <Name>FileCryptography.Domain.Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Requests\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

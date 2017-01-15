@@ -7,11 +7,10 @@ using System.Threading.Tasks;
 
 namespace FileCryptography.Domain.Model
 {
-    [DataContract]
     public class File
     {
         protected File()
-        {}
+        { }
 
         public File(string name, byte[] content)
         {
@@ -19,10 +18,8 @@ namespace FileCryptography.Domain.Model
             this.Content = content;
         }
 
-        [DataMember]
         public string Name { get; set; }
 
-        [DataMember]
         public byte[] Content { get; set; }
     }
 }
