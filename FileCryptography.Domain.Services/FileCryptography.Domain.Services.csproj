@@ -44,7 +44,7 @@
     <Compile Include="Messages\DecryptionRequest.cs" />
     <Compile Include="Messages\EncryptionRequest.cs" />
     <Compile Include="IFileCryptographyService.cs" />
-    <Compile Include="IMessage.cs" />
+    <Compile Include="Message.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Messages\RegisterPrivateKeyRequest.cs" />
     <Compile Include="Messages\RegisterPublicKeyRequest.cs" />
