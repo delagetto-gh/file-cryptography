@@ -6,7 +6,7 @@ using System.Linq;
 using System.Runtime.Serialization;
 using System.Text;
 
-namespace FileCryptography.Domain.Services
+namespace FileCryptography.Business.Logic
 {
     [DataContract]
     public abstract class CryptionRequest : Message

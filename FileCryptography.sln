@@ -3,21 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.40629.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{BDF428A3-B7B8-4402-8F28-5D11860177C1}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Data", "Data", "{B495307B-B852-4F78-8CEC-29C99DA5E640}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{56601C43-0622-4E17-B31B-1EA497B0F981}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{8471E383-ADD2-4C57-9324-51B8E9C18C33}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileCryptography.Services.ServiceHost.Wcf", "FileCryptography.Services.ServiceHost.Wcf\FileCryptography.Services.ServiceHost.Wcf.csproj", "{0A98464D-8CBC-42F3-A295-3FED5857FDAA}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{683893F4-E2B3-4BE4-8032-E50D55B1DCEC}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileCryptography.Business.Logic", "FileCryptography.Business.Logic\FileCryptography.Business.Logic.csproj", "{AB3CD018-F91A-4FCD-AE45-CD1B32EF665A}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileCryptography.Data.Resources", "FileCryptography.Data.Resources\FileCryptography.Data.Resources.csproj", "{C00A1EE4-772F-48BD-B697-931F33BACB88}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileCryptography.Domain.Services", "FileCryptography.Domain.Services\FileCryptography.Domain.Services.csproj", "{EF87A73E-A9CD-420C-805F-10101EB5DA0B}"
 EndProject
@@ -79,7 +65,6 @@ Global
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{0A98464D-8CBC-42F3-A295-3FED5857FDAA} = {BDF428A3-B7B8-4402-8F28-5D11860177C1}
-		{AB3CD018-F91A-4FCD-AE45-CD1B32EF665A} = {56601C43-0622-4E17-B31B-1EA497B0F981}
 		{C00A1EE4-772F-48BD-B697-931F33BACB88} = {B495307B-B852-4F78-8CEC-29C99DA5E640}
 		{EF87A73E-A9CD-420C-805F-10101EB5DA0B} = {56601C43-0622-4E17-B31B-1EA497B0F981}
 		{853E76C4-AEC1-4483-A6C7-A4541EFB25FC} = {8471E383-ADD2-4C57-9324-51B8E9C18C33}
