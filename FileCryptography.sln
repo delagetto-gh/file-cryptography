@@ -15,7 +15,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileCryptography.Services.S
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{683893F4-E2B3-4BE4-8032-E50D55B1DCEC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileCryptography.Domain.Model", "FileCryptography.Domain.Model\FileCryptography.Domain.Model.csproj", "{AB3CD018-F91A-4FCD-AE45-CD1B32EF665A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileCryptography.Business.Logic", "FileCryptography.Business.Logic\FileCryptography.Business.Logic.csproj", "{AB3CD018-F91A-4FCD-AE45-CD1B32EF665A}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileCryptography.Data.Resources", "FileCryptography.Data.Resources\FileCryptography.Data.Resources.csproj", "{C00A1EE4-772F-48BD-B697-931F33BACB88}"
 EndProject
@@ -23,9 +23,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileCryptography.Domain.Ser
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileCryptography.Infrastructure.Logging", "FileCryptography.Infrastructure.Logging\FileCryptography.Infrastructure.Logging.csproj", "{853E76C4-AEC1-4483-A6C7-A4541EFB25FC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileCryptography.Infrastructure.DataAccess", "FileCryptography.Infrastructure.DataAccess\FileCryptography.Infrastructure.DataAccess.csproj", "{6136D6FA-E00D-4D0B-9E77-6212E5690B98}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileCryptography.DataAccess", "FileCryptography.DataAccess\FileCryptography.DataAccess.csproj", "{6136D6FA-E00D-4D0B-9E77-6212E5690B98}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileCryptography.Data.InMemoryDb", "FileCryptography.Data.InMemoryDb\FileCryptography.Data.InMemoryDb.csproj", "{6E977590-39F4-43FA-9BF2-102352F20A34}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileCryptography.DataAccess.InMemoryDb", "FileCryptography.DataAccess.InMemoryDb\FileCryptography.DataAccess.InMemoryDb.csproj", "{6E977590-39F4-43FA-9BF2-102352F20A34}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileCryptography.Infrastructure.Services", "FileCryptography.Infrastructure.Services\FileCryptography.Infrastructure.Services.csproj", "{2506D803-98FA-4AC5-9FCE-9AF7307CE0F9}"
 EndProject

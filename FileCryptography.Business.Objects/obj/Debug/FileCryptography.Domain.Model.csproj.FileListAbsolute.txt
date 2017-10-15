@@ -1,0 +1,4 @@
+D:\Users\Goose\Documents\Visual Studio 2013\Projects\Wcf\FileCryptgraphy\FileCryptography.Business.Logic\bin\Debug\FileCryptography.Business.Logic.dll
+D:\Users\Goose\Documents\Visual Studio 2013\Projects\Wcf\FileCryptgraphy\FileCryptography.Business.Logic\bin\Debug\FileCryptography.Business.Logic.pdb
+D:\Users\Goose\Documents\Visual Studio 2013\Projects\Wcf\FileCryptgraphy\FileCryptography.Business.Logic\obj\Debug\FileCryptography.Business.Logic.dll
+D:\Users\Goose\Documents\Visual Studio 2013\Projects\Wcf\FileCryptgraphy\FileCryptography.Business.Logic\obj\Debug\FileCryptography.Business.Logic.pdb
