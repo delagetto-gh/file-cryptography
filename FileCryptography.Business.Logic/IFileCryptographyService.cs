@@ -3,7 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq.Expressions;
 
-namespace FileCryptography.Domain.Services
+namespace FileCryptography.Business.Logic
 {
     public interface IFileCryptographyService
     {

@@ -4,32 +4,32 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace FileCryptography.DataAccess.InMemoryDb
+namespace FileCryptography.DataAccess
 {
-    public class DataContextFactory
+    public class FileCryptographyDbContextFactory
     {
-        private static DataContextFactory defaultContextFactory;
+        private static FileCryptographyDbContextFactory defaultContextFactory;
 
-        public static DataContextFactory Default
+        public static FileCryptographyDbContextFactory Default
         {
             get
             {
                 if (defaultContextFactory == null)
-                    defaultContextFactory = new DataContextFactory();
+                    defaultContextFactory = new FileCryptographyDbContextFactory();
 
                 return defaultContextFactory;
             }
         }
 
-        private Dictionary<Type, DataContext> dcs;
+        private Dictionary<Type, FileCryptographyDbContext> dcs;
 
-        public DataContextFactory()
+        public FileCryptographyDbContextFactory()
         {
-            this.dcs = new Dictionary<Type, DataContext>();
+            this.dcs = new Dictionary<Type, FileCryptographyDbContext>();
             this.dcs.Add(typeof(InMemoryDbDataContext), new InMemoryDbDataContext());
         }
 
-        public T CreateContext<T>() where T : DataContext
+        public T CreateContext<T>() where T : FileCryptographyDbContext
         {
             if (this.dcs.ContainsKey(typeof(T)))
                 return (T)this.dcs[typeof(T)];

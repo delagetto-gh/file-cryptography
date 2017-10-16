@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace FileCryptography.Infrastructure.Logging
+namespace FileCryptography.Common.Framework
 {
     public interface ILogger
     {

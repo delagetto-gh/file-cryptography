@@ -5,7 +5,7 @@ using System.Runtime.Serialization;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace FileCryptography.Business.Logic
+namespace FileCryptography.Business.Objects
 {
     public class File
     {

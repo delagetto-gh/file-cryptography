@@ -5,7 +5,7 @@ using System.Runtime.Serialization;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace FileCryptography.DataAccess.InMemoryDb
+namespace FileCryptography.DataAccess.Entity
 {
     [DataContract]
     public class LogMessage
@@ -13,6 +13,5 @@ namespace FileCryptography.DataAccess.InMemoryDb
         public DateTimeOffset Date { get; set; }
 
         public string Message { get; set; }
-
     }
 }

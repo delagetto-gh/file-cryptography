@@ -4,7 +4,7 @@ using System.Linq;
 using System.ServiceModel;
 using System.Text;
 
-namespace FileCryptography.Framework.Services.Contracts
+namespace FileCryptography.Service
 {
     public interface IFileCryptographyServiceCallbacks
     {

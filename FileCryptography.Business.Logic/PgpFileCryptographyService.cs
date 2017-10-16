@@ -10,7 +10,7 @@ using System.ServiceModel;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace FileCryptography.Services.ServiceImplementation
+namespace FileCryptography.Business.Logic
 {
     public class PgpFileCryptographyService : IFileCryptographyService
     {

@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace FileCryptography.DataAccess.InMemoryDb
+namespace FileCryptography.DataAccess.Entity
 {
-    public class CrytpographyActionArtifact
+    public class CryptographyArtifact
     {
         public int Action { get; set; }
 

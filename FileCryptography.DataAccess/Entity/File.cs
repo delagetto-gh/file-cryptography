@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace FileCryptography.DataAccess.InMemoryDb
+namespace FileCryptography.DataAccess.Entity
 {
     public abstract class File
     {

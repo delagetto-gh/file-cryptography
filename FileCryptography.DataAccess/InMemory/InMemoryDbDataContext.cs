@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace FileCryptography.DataAccess.InMemoryDb
 {
-    public class InMemoryDbDataContext : DataContext
+    public class InMemoryDbDataContext : FileCryptographyDbContext
     {
         private Dictionary<Type, MemoryStream> inMemrydb;
 

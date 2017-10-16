@@ -5,7 +5,7 @@ using System.Runtime.Serialization;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace FileCryptography.DataAccess.InMemoryDb
+namespace FileCryptography.DataAccess.Entity
 {
     [DataContract]
     public class PublicKey : File

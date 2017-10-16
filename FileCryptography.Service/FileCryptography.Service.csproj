@@ -51,7 +51,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\FileCryptography.Domain.Model\FileCryptography.Domain.Model.csproj">
+    <ProjectReference Include="..\FileCryptography.Business.Objects\FileCryptography.Business.Objects.csproj">
       <Project>{ab3cd018-f91a-4fcd-ae45-cd1b32ef665a}</Project>
       <Name>FileCryptography.Domain.Model</Name>
     </ProjectReference>

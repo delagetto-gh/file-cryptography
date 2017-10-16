@@ -5,7 +5,7 @@ using System.ServiceModel;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace FileCryptography.Framework.Services.Contracts
+namespace FileCryptography.Service
 {
     [ServiceContract(CallbackContract = typeof(IFileCryptographyServiceCallbacks))]
     public interface IFileCryptographyService
